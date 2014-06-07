@@ -10,10 +10,13 @@
     </head>
     <body>
         <div class="container">
-            {% include header.html %}
-            <h1>This is my Heading 2</h1>
-            {{ content }}
-            {% include footer.html %}
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    {% include header.html %}
+                    {{ content }}
+                    {% include footer.html %}
+                </div>
+            </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
