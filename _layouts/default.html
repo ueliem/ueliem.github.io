@@ -27,7 +27,9 @@
                         </div>
                     </form>
                     <h5>Categories:</h5>
-
+                    {% for category in site.categories %}
+                        <div>{{ category | first }}</div>
+                    {% endfor %}
                 </div>
             </div>
             <div class="row">
