@@ -3,3 +3,17 @@
     color: #777;
     border-top: 1px solid #E5E5E5;
 }
+.header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.header h3 {
+    padding-bottom: 19px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 40px;
+}
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
