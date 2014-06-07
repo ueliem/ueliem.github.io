@@ -17,3 +17,15 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.titlename {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.titledate {
+    color: #777;
+    float: right;
+    margin-bottom: 0px;
+}
+.postheader {
+    padding-bottom: 15px;
+}
