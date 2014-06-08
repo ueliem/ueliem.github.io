@@ -1,8 +1,22 @@
 <div class="header">
     <ul class="nav nav-pills pull-right">
-        <li class="active"><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+        {% if page.active == "home" %}
+            <li class="active"><a href="/">Home</a></li>
+        {% else %}
+            <li><a href="/">Home</a></li>
+        {% endif %}
+
+        {% if page.active == "about" %}
+            <li class="active"><a href="/about">About</a></li>
+        {% else %}
+            <li><a href="/about">About</a></li>
+        {% endif %}
+
+        {% if page.active == "contact" %}
+            <li class="active"><a href="/contact">Contact</a></li>
+        {% else %}
+            <li><a href="/contact">Contact</a></li>
+        {% endif %}
     </ul>
     <h3 class="text-muted">Ueliem.github.io</h3>
 </div>
