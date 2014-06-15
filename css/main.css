@@ -1,3 +1,21 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+p {
+  font-weight: normal;
+  font-style: normal;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
 .footer {
     padding-top: 19px;
     color: #777;
@@ -12,10 +30,6 @@
     margin-top: 0px;
     margin-bottom: 0px;
     line-height: 40px;
-}
-body {
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 .titlename {
     margin-top: 0px;
