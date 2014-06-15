@@ -1,12 +1,15 @@
 ---
 layout: default
 ---
-<div class="row postheader">
-    <div class="col-lg-8">
-        <h1 class="titlename">{{ page.title }}</h1>
+<div class="carddiv">
+    <div class="row postheader">
+        <div class="col-lg-8">
+            <h3 class="titlename">{{ page.title }}</h3>
+        </div>
+        <div class="col-lg-4">
+            <h4 class="titledate">{{ page.date | date: "%-d %B %Y"}}</h4>
+        </div>
     </div>
-    <div class="col-lg-4">
-        <h4 class="titledate">{{ page.date | date: "%-d %B %Y"}}</h4>
-    </div>
+    <div class="divline"></div>
+    <div class="cardbody">{{ content }}</div>
 </div>
-<div>{{ content }}</div>

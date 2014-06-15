@@ -2,6 +2,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: 'Fira Sans', sans-serif;
+    background: url(/img/noisy_grid.png) repeat 0 0;
 }
 p {
   font-weight: normal;
@@ -32,12 +33,13 @@ strong {
     line-height: 40px;
 }
 .titlename {
-    margin-top: 0px;
+    /*margin-top: 0px;*/
     margin-bottom: 0px;
 }
 .titledate {
     color: #777;
     float: right;
+    margin-top: 25px;
     margin-bottom: 0px;
 }
 .postheader {
