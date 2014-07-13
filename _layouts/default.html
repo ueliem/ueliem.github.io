@@ -23,17 +23,23 @@
                     {{ content }}
                 </div>
                 <div class="col-lg-2">
-                    <h3><a href="/feed.atom">Feed <i class="fa fa-rss"></i></a></h3>
-                    <form method="post" action="">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="" placeholder="Search" />
-                            <input type="submit" class="btn btn-default" value="Search" />
-                        </div>
-                    </form>
-                    <h5>Categories:</h5>
-                    {% for category in site.categories %}
-                        <div>{{ category | first }}</div>
-                    {% endfor %}
+                    <div class="carddiv" style="padding-bottom: 15px">
+                        <h3><a href="/feed.atom">Feed <i class="fa fa-rss"></i></a></h3>
+                        <form method="post" action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="" placeholder="Search" />
+                                <!-- <input type="submit" class="btn btn-default" value="Search" /> -->
+                            </div>
+                        </form>
+                        <h4><i class="fa fa-folder"></i> Categories:</h4>
+                        {% for category in site.categories %}
+                            <div>{{ category | first }}</div>
+                        {% endfor %}
+                        <h4><i class="fa fa-tags"></i> Tags:</h4>
+                        {% for tag in site.tags %}
+                            <div>{{ tag | first }}</div>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
             <div class="row">

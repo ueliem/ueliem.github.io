@@ -12,6 +12,11 @@ layout: default
     </div>
     <div class="divline"></div>
     <div class="cardbody">
+        <div style="padding-bottom: 15px">
+            <small>Tags: {% for tag in page.tags %}
+                    <a href="/tags/{{ tag }}">{{ tag }}</a>
+                {% endfor %}</small>
+        </div>
         <div>{{ content }}</div>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
