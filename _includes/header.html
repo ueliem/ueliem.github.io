@@ -17,6 +17,12 @@
         {% else %}
             <li><a href="/contact">Contact</a></li>
         {% endif %}
+
+        {% if page.active == "projects" %}
+            <li class="active"><a href="/projects">Projects</a></li>
+        {% else %}
+            <li><a href="/projects">Projects</a></li>
+        {% endif %}
     </ul>
     <h3 class="text-muted">Ueliem.me</h3>
 </div>

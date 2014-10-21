@@ -45,3 +45,17 @@ strong {
 .postheader {
     padding-bottom: 15px;
 }
+
+ul.projectlist {
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul.projectlist li {
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.projentry {
+    padding-top: 20px;
+}

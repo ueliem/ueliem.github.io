@@ -1,0 +1,8 @@
+{
+	"name": "FoodASM",
+	"desc": "The Food Assembler. Me and my father made this app together at Techcrunch Disrupt NY 2014 and won the Pearson Best Use of API prize. This was both of our's first hackathon. The goal is to create an application that helps you create a good meal with the ingredients you already have. We used the Pearson Kitchen Manager API to provide recipes, and the Evernote API to send you a checklist of ingredients. ",
+	"url": "http://challengepost.com/software/foodasm",
+	"repo": "https://github.com/ueliem/FoodASM",
+	"thumb": "http://placehold.it/150x150/dddddd/ffffff&text=FoodASM"
+}
+
