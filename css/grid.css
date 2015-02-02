@@ -1,0 +1,41 @@
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+[class*='col-'] {
+	float: left;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+[class*='col-']:last-of-type {
+	padding-right: 0;
+}
+.col-12 {
+	width: 100%;
+}
+.col-8 {
+	width: 66.6%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-4 {
+	width: 33.3%;
+}
+.col-3 {
+	width: 25%;
+}
+.row {
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+

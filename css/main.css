@@ -1,8 +1,7 @@
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
     font-family: 'Fira Sans', sans-serif;
-    background: url(/img/noisy_grid.png) repeat 0 0;
+    font-size: 16px;
+    margin: 0px;
 }
 p {
   font-weight: normal;
@@ -22,16 +21,6 @@ strong {
     color: #777;
     border-top: 1px solid #E5E5E5;
 }
-.header {
-    margin-bottom: 30px;
-    border-bottom: 1px solid #E5E5E5;
-}
-.header h3 {
-    padding-bottom: 19px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    line-height: 40px;
-}
 .titlename {
     /*margin-top: 0px;*/
     margin-bottom: 0px;
@@ -39,7 +28,7 @@ strong {
 .titledate {
     color: #777;
     float: right;
-    margin-top: 25px;
+    margin-top: 45px;
     margin-bottom: 0px;
 }
 .postheader {
@@ -59,3 +48,23 @@ ul.projectlist li {
 .projentry {
     padding-top: 20px;
 }
+
+h1 {
+    font-size: 67px;
+}
+h2 {
+    font-size: 50px;
+}
+h3 {
+    font-size: 37px;
+}
+h4 {
+    font-size: 28px;
+}
+h5 {
+    font-size: 21px;
+}
+h6 {
+    font-size: 16px;
+}
+

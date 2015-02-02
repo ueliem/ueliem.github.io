@@ -1,0 +1,47 @@
+header {
+	background-color: #ccc;
+	box-shadow: 1px 1px 5px #ddd;
+}
+
+header ul li {
+	display: inline-block;
+	border-bottom: 5px solid #ccc;
+}
+
+header ul li.active {
+	background-color: #bbb;
+	border-bottom: 5px solid #999;
+}
+
+.topnav {
+	margin: 0px;
+	padding: 0px;
+}
+
+.topnav li {
+	padding-top: 24px;
+	padding-bottom: 19px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.topnav a:link {
+	color: #000;
+	text-decoration: none;
+}
+
+.topnav a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+.topnav a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.topnav a:active {
+	color: #000;
+	text-decoration: none;
+}
+
