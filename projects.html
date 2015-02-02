@@ -4,28 +4,24 @@ title: Projects
 active: projects
 ---
 
-<div class="carddiv">
-    <h3>Projects</h3>
-    <div class="divline"></div>
-    <div class="cardbody">
-        <ul class="projectlist">
-          {% for project_hash in site.data.projects %}
-					{% assign project = project_hash[1] %}
-            <li>
-						<div class="row">
-							<div class="col-md-3">
-								<img src="{{ project.thumb }}">
-							</div>
-							<div class="col-md-9">
-								<div class="projentry">
-									<a href="{{ project.url }}">{{ project.name }}</a> &middot;
-									<a href="{{ project.repo }}">Repo</a>
-									<p>{{ project.desc }}</p>
-								</div>
-							</div>
-						</div>
-            </li>
-          {% endfor %}
-        </ul>
-    </div>
-</div>
+<h3>Projects</h3>
+<div class="divline"></div>
+<ul class="projectlist">
+	{% for project_hash in site.data.projects %}
+	{% assign project = project_hash[1] %}
+		<li>
+		<div class="row">
+			<div class="col-md-3">
+				<img src="{{ project.thumb }}">
+			</div>
+			<div class="col-md-9">
+				<div class="projentry">
+					<a href="{{ project.url }}">{{ project.name }}</a> &middot;
+					<a href="{{ project.repo }}">Repo</a>
+					<p>{{ project.desc }}</p>
+				</div>
+			</div>
+		</div>
+		</li>
+	{% endfor %}
+</ul>
