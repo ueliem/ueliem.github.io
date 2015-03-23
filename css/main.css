@@ -26,9 +26,10 @@ strong {
     margin-bottom: 0px;
 }
 .titledate {
-    color: #777;
-    float: right;
-    margin-top: 45px;
+    color: #CCC;
+    /*float: right;*/
+    /*margin-top: 45px;*/
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 .postheader {
@@ -66,5 +67,33 @@ h5 {
 }
 h6 {
     font-size: 16px;
+}
+
+blockquote {
+    border-left-color: #CCC;
+    border-left-style: solid;
+    padding-left: 10px;
+    border-width: 4px;
+    margin-bottom: 30px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #CCC;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #CCC;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #CCC;
+}
+
+a:active {
+    text-decoration: none;
+    color: #CCC;
 }
 
