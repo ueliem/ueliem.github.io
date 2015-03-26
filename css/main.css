@@ -97,3 +97,8 @@ a:active {
     color: #CCC;
 }
 
+code {
+    font-family: 'Fira Mono', monospace;
+    font-size: 16px;
+}
+
