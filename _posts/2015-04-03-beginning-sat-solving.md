@@ -14,9 +14,11 @@ Recently Microsoft open-sourced [Z3](https://github.com/Z3Prover/z3/), an SMT-so
 
 ####Introduction
 
+Before you get started, you can get the SAT-solving tool we're using [here](https://github.com/ueliem/pysat/commit/a8a2b7463eb9b97866c9f713df5afc6ba1d1a230)!
+
 Boolean Satisifiability (SAT) solving is a a formal method that has application in verifying software function. However, the theory has been around for long before. [The Boolean Satisfiability Problem](http://en.wikipedia.org/wiki/Boolean_satisfiability_problem) is a question whether a given Boolean equation can have its variables replaced with some combination of ```True``` and ```False``` such that the equation _can_ be evaluated to ```True```. 
 
-For the purposes of this post, I wrote a very simple SAT-solver. It's ugly, but it _works_ and is accessible to anyone familiar with Python. It uses brute force to determine whether any values satisfy the boolean equation supplied. For our purposes, this is fine, because we are using small equations. As you can guess, the runtime would be worse for equations with very large numbers of inputs. Real SAT-solvers use better algorithms or heuristics to solve more efficiently. I chose to keep the code simple for comprehension. The solver also cannot handle parentheses, so don't use them! Like I said, lazy. Here is a bit of theory on how this all works. 
+For the purposes of this post, I wrote a [very simple SAT-solver](https://github.com/ueliem/pysat/commit/a8a2b7463eb9b97866c9f713df5afc6ba1d1a230). It's ugly, but it _works_ and is accessible to anyone familiar with Python. It uses brute force to determine whether any values satisfy the boolean equation supplied. For our purposes, this is fine, because we are using small equations. As you can guess, the runtime would be worse for equations with very large numbers of inputs. Real SAT-solvers use better algorithms or heuristics to solve more efficiently. I chose to keep the code simple for comprehension. The solver also cannot handle parentheses, so don't use them! Like I said, lazy. Here is a bit of theory on how this all works. 
 
 ####Theory
 
@@ -44,7 +46,7 @@ Manually plug in ```True``` for ```a```, and then try ```False```. Both evaluate
 
 ####Using The Solver
 
-If you haven't already, you can get the solver from [here](https://github.com/ueliem/pysat). 
+If you haven't already, you can get the solver from [here](https://github.com/ueliem/pysat/commit/a8a2b7463eb9b97866c9f713df5afc6ba1d1a230).
 
 The solver is a Python program run from the shell. The first argument to the program is the Boolean equation you want to be satisfied. For example:
 
