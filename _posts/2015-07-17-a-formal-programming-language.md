@@ -11,7 +11,7 @@ tags:
  - hoare
 ---
 
-####The Language
+#### The Language
 First, an example. No syntax highlighting yet! This is the as of yet impractical Hello world. There are no strings or arrays yet, just signed and unsigned system types, and booleans. The variables in this example don't do anything except to demonstrate the declaration of variables. Comments are Ada-style. The language is imperative and strongly typed, but has type inference for integer literals. 
 
 <div class="highlight">
@@ -36,7 +36,7 @@ This language draws from [Hoare's CSP](https://en.wikipedia.org/wiki/Communicati
 CSP programs are composed of processes, which are program parts that communicate through message passing. Processes can instantiate other processes as children, which all run in parallel. In this dialect, channels are the means of communication between processes. Channels are defined by connecting the ports of children processes or those of the parent process. 
 
 
-####Another Example
+#### Another Example
 
 <div class="highlight">
 <pre>
@@ -63,11 +63,11 @@ end Main
 
 The prefix (```->```) operation is how a process engages in events, such as sending and receiving messages on channels. This program accepts one character from standard input and prints it to the console in a very indirect way, to demonstrate instances and connections. The question mark signifies receiving a value into a variable and the exclamation mark signifies sending the result of an expression on a channel. There are also loops, both unconditional and conditional. Unconditional loops are written ```*[[ <process_expression> ]]```, where a process expression is a combination of operations such as prefix, loops, and guarded expressions. A conditional loop is written in the form ```*[<guard> -> <process_expression>]```, where the guard is a boolean expression. 
 
-####Why
+#### Why
 
 Software bugs are a huge problem, especially in medical devices, and devices in similar life-sustaining roles. It is unacceptable for a medical device to harm the patient. Languages used in such fields should play a role in the safety of the end user. They should't allow undefined behavior the way C does. Such languages should be amenable to analysis and verification so that correct functionality and safe execution can be ensured. 
 
-####Current Status And Next Steps
+#### Current Status And Next Steps
 
 Right now, the language is running on a very simple stack VM. There is _very_ basic threading. My current focus is on native code generation, first for x86-64, and then an embedded platform (I just found my Duemilanove, so I'm thinking ATmega168). I'm bootstrapping the code generation with NASM, by piping out the assembly over stdout. Ultimately I want to add assertions and proofs to the language, allowing for formal verification of programs. 
 
