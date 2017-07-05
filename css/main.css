@@ -26,7 +26,7 @@ strong {
     margin-bottom: 0px;
 }
 .titledate {
-    color: #CCC;
+    color: #888;
     /*float: right;*/
     /*margin-top: 45px;*/
     margin-top: 0px;
@@ -69,7 +69,7 @@ h6 {
 }
 
 blockquote {
-    border-left-color: #CCC;
+    border-left-color: #888;
     border-left-style: solid;
     padding-left: 10px;
     border-width: 4px;
@@ -78,22 +78,22 @@ blockquote {
 
 a:link {
     text-decoration: none;
-    color: #CCC;
+    color: #888;
 }
 
 a:visited {
     text-decoration: none;
-    color: #CCC;
+    color: #888;
 }
 
 a:hover {
     text-decoration: none;
-    color: #CCC;
+    color: #888;
 }
 
 a:active {
     text-decoration: none;
-    color: #CCC;
+    color: #888;
 }
 
 code {
@@ -102,8 +102,8 @@ code {
 }
 
 div.highlight {
-	border-top: 1px solid #CCC;
-	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #888;
+	border-bottom: 1px solid #888;
 	background: #FBFBFB;
 }
 
